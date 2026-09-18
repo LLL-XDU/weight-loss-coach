@@ -1,0 +1,35 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: #f4f6f4; color: #1c241f; padding-bottom: 64px; }
+#topbar { background: #1f8a4c; color: #fff; padding: 14px 16px; }
+#topbar h1 { font-size: 18px; }
+#view { padding: 16px; max-width: 560px; margin: 0 auto; }
+#tabbar { position: fixed; bottom: 0; left: 0; right: 0; display: flex;
+  background: #fff; border-top: 1px solid #dde3de; }
+#tabbar button { flex: 1; padding: 12px 0; border: 0; background: none;
+  font-size: 13px; color: #5a6a5f; }
+#tabbar button.active { color: #1f8a4c; font-weight: 700; }
+.card { background:#fff; border-radius:12px; padding:16px; margin-bottom:14px;
+  box-shadow:0 1px 3px rgba(0,0,0,.06); }
+.card h2 { font-size:15px; margin-bottom:10px; color:#2c3a31; }
+.ring-wrap { display:flex; align-items:center; gap:16px; }
+.ring-wrap svg { flex:0 0 auto; }
+.btn { display:inline-block; background:#1f8a4c; color:#fff; border:0; border-radius:8px;
+  padding:10px 16px; font-size:14px; }
+.btn.ghost { background:#eef3ef; color:#1f8a4c; }
+.row { display:flex; gap:8px; align-items:center; margin-top:8px; }
+input, select { padding:10px; border:1px solid #cfd8d1; border-radius:8px; font-size:14px; width:100%; }
+.list-item { display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid #eef1ee; font-size:14px; }
+.muted { color:#7d8a81; font-size:12px; }
+.big-num { font-size:26px; font-weight:800; color:#1f8a4c; }
+.search-results { border:1px solid #dde3de; border-radius:8px; margin-top:6px; }
+.search-item { padding:10px 12px; display:flex; justify-content:space-between; border-bottom:1px solid #eef1ee; }
+.search-item:last-child { border-bottom:0; }
+.tag { font-size:11px; color:#7d8a81; background:#eef3ef; border-radius:4px; padding:2px 6px; margin-left:6px; }
+.week-grid { display:grid; grid-template-columns:repeat(7,1fr); gap:6px; }
+.day-cell { background:#f4f6f4; border-radius:8px; padding:8px 4px; text-align:center; font-size:12px; }
+.day-cell.run { background:#e2f2e7; border:1px solid #1f8a4c; }
+.day-cell.done { background:#1f8a4c; color:#fff; }
+.day-cell .d { font-weight:700; }
+.ex-list label { display:flex; gap:8px; padding:8px 0; border-bottom:1px solid #eef1ee; font-size:14px; }
+.ex-list input { width:auto; }
